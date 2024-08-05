@@ -23,7 +23,7 @@ const makeCommit = (n) => {
     });
 }
 
-makeCommit(100)
+makeCommit(1000)
 
 // const startDate = moment().subtract(3, 'years');
 //   const endDate = moment();
