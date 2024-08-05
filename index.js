@@ -14,7 +14,7 @@ const makeCommit = (n) => {
     }
     const x = randomIntFromInterval(0, 54);
     const y = randomIntFromInterval(0, 6);
-    const DATE = moment().subtract(5, 'y').add(1, 'd')
+    const DATE = moment().subtract(4, 'y').add(1, 'd')
                 .add(x, 'w').add(y, 'd').format();
     const data = {date: DATE}
     console.log(DATE);
@@ -23,7 +23,7 @@ const makeCommit = (n) => {
     });
 }
 
-makeCommit(1000)
+makeCommit(500)
 
 // const startDate = moment().subtract(3, 'years');
 //   const endDate = moment();
