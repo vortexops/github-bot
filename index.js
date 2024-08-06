@@ -37,7 +37,7 @@ function randomIntFromInterval(min, max) { // min and max included
 //     });
 //   }
 
-const startDate = moment().subtract(1, 'y');
+const startDate = moment().subtract(8, 'y');
 const endDate = moment();
 
 for (let date = startDate; date.isBefore(endDate); date.add(1, 'd')) {
