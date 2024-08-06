@@ -14,8 +14,7 @@ const makeCommit = (n) => {
     }
     const x = randomIntFromInterval(0, 54);
     const y = randomIntFromInterval(0, 6);
-    const DATE = moment().subtract(7, 'y').add(1, 'd')
-                .add(x, 'w').add(y, 'd').format();
+    const DATE = moment().subtract(7, 'y').add(1, 'd').add(x, 'w').format();
     const data = {date: DATE}
     console.log(DATE);
     jsonfile.writeFile(FILE_PATH, data, ()=>{
